@@ -31,7 +31,11 @@ const App = () => {
       <Hero />
   
      
-     
+     <Suspense fallback={<p>Loading...</p>}>
+          
+            <TechCard usersPromise={usersPromise} />
+
+        </Suspense>
 
       <Footer/>
 
