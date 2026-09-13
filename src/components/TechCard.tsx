@@ -1,5 +1,7 @@
+import { toast } from "react-toastify";
 import type { Technology } from "../types";
 import { use, useState } from "react";
+// import { ToastContainer } from "react-toastify";
 
 interface ItechCardProps {
   usersPromise: Promise<Technology[]>;
@@ -12,6 +14,7 @@ const TechCard = ({ usersPromise }: ItechCardProps) => {
 
   const addToStack = (technology: Technology) => {
     setStack((previousStack) => [...previousStack, technology]);
+     toast.success(`${technology.name} Added to Stack`);
   };
 
   const removeFromStack = (id: string) => {
@@ -85,9 +88,10 @@ const TechCard = ({ usersPromise }: ItechCardProps) => {
                     isAdded
                       ? "cursor-not-allowed bg-gray-400"
                       : "bg-slate-950 hover:bg-slate-800"
-                  }`}
+            }`}
                 >
-                  {isAdded ? "Added to Stack" : "Add to Stack"}
+                  {isAdded ?
+                   "Added to Stack" : "Add to Stack"}
                 </button>
               </div>
             );

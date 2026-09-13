@@ -5,6 +5,7 @@ import TechCard from "./components/TechCard";
 
 import { Suspense } from "react";
 import Footer from "./components/footer";
+import { ToastContainer } from "react-toastify";
 
 
 
@@ -38,6 +39,9 @@ const App = () => {
 
       <Footer/>
 
+
+
+<ToastContainer />
 
 
 
