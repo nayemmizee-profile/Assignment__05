@@ -18,3 +18,16 @@ ans--  Conditional rendering means displaying different UI based on a condition.
 
 Ques__7
 ans--  From a parent component to a child component, when I need to pass data, I use props. Since React follows one-way data flow, when I need to send data from a child to a parent, I use a callback function passed through props.
+
+
+
+
+ Technologies Used
+
+* Structure: HTML5
+* Styling & Layout: Tailwind CSS & DaisyUI
+* Logic & Interactivity: JavaScript (ES6+ DOM Manipulation)
+* Icons & Fonts: FontAwesome / Google Fonts (Geist & Poppins)
+* Deployment: GitHub Pages
+
+
