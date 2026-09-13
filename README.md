@@ -1,32 +1,20 @@
-# React + TypeScript + Vite
+Ques __1 
+ans - JSX is HTML-like syntax for JS or TS. It is used in React so that React components can be written more easily.
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Ques__2
+ans-- In React props is used for passing data from a parent component to a child component,while state is used to manage data that can change over time.
 
-Currently, two official plugins are available:
+Ques__3
+ans-- useState is a React Hook used to create and manage component state. In this project, I used it to store and update the selected technology stack.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Ques__4
+ans--  useEffect is a React Hook used to manage side effects like data fetching. It is used to load JSON data after the component renders.
 
-## React Compiler
+Ques__5
+ans--  A unique key helps to identify each list item and determine which items have  been used, updated, or added.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Ques__6
+ans--  Conditional rendering means displaying different UI based on a condition. In this project, I used it to show an empty-stack message when stack.length === 0.
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Ques__7
+ans--  From a parent component to a child component, when I need to pass data, I use props. Since React follows one-way data flow, when I need to send data from a child to a parent, I use a callback function passed through props.
