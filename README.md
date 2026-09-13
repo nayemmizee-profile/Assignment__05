@@ -31,3 +31,11 @@ ans--  From a parent component to a child component, when I need to pass data, I
 * Deployment: GitHub Pages
 
 
+3 Features about this Project-->
+
+Clean & Modern Layout: The website has a neat, well-organized design that makes it easy for visitors to read and navigate.
+
+Interactive Elements: It includes clickable buttons and interactive components designed to give users an engaging experience.
+
+Responsive Web Design: The layout adapts smoothly across different screen sizes, working well on both desktop computers and mobile devices.
+
