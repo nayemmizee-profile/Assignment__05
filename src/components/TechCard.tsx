@@ -29,7 +29,7 @@ const TechCard = ({ usersPromise }: ItechCardProps) => {
   return (
     <>
       <section className="grid grid-cols-1 gap-6 lg:grid-cols-4 px-40 pt-10 bg-emerald-50">
-        {/* ================= LEFT SIDE ================= */}
+       
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 lg:col-span-3">
           {data.map((technology) => {
            
