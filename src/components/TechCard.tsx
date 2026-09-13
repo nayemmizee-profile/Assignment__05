@@ -29,7 +29,7 @@ const TechCard = ({ usersPromise }: ItechCardProps) => {
         {/* ================= LEFT SIDE ================= */}
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 lg:col-span-3">
           {data.map((technology) => {
-            // Check whether this technology is already selected
+           
             const isAdded = stack.some((item) => item.id === technology.id);
 
             return (
@@ -37,7 +37,7 @@ const TechCard = ({ usersPromise }: ItechCardProps) => {
                 key={technology.id}
                 className="rounded-2xl border border-gray-200 bg-[#f5fff5] p-6 shadow-sm"
               >
-                {/* Logo + Badge */}
+                
                 <div className="flex items-center justify-between">
                   <img
                     src={technology.icon}
@@ -50,17 +50,17 @@ const TechCard = ({ usersPromise }: ItechCardProps) => {
                   </span>
                 </div>
 
-                {/* Name */}
+              
                 <h2 className="mt-6 text-xl font-bold text-gray-900">
                   {technology.name}
                 </h2>
 
-                {/* Description */}
+               
                 <p className="mt-2 text-sm leading-6 text-slate-500">
                   {technology.description}
                 </p>
 
-                {/* Category + Difficulty + Rating */}
+               
                 <div className="mt-5 flex items-center justify-between border-t border-gray-100 pt-3">
                   <span className="rounded bg-gray-100 px-2 py-1 text-xs text-slate-600">
                     {technology.category}
@@ -76,7 +76,7 @@ const TechCard = ({ usersPromise }: ItechCardProps) => {
                   </span>
                 </div>
 
-                {/* Add Button */}
+                
                 <button
                   onClick={() => addToStack(technology)}
                   disabled={isAdded}
@@ -94,7 +94,7 @@ const TechCard = ({ usersPromise }: ItechCardProps) => {
           })}
         </div>
 
-        {/* ================= RIGHT SIDEBAR ================= */}
+
    
 
        <aside className="h-fit rounded-2xl border border-gray-200 bg-[#f5fff5] p-6 shadow-sm lg:col-span-1">
@@ -110,7 +110,7 @@ const TechCard = ({ usersPromise }: ItechCardProps) => {
   </p>
 
 
-  {/* Empty Stack */}
+  
   {stack.length === 0 && (
     <div className="mt-5 flex h-fit items-center justify-center rounded-xl border border-dashed border-gray-300 py-4 text-sm text-gray-400">
       Your stack is empty.
@@ -118,11 +118,11 @@ const TechCard = ({ usersPromise }: ItechCardProps) => {
   )}
 
 
-  {/* Selected Technologies */}
+  
   {stack.length > 0 && (
     <div className="mt-5">
 
-      {/* Selected items */}
+      
       <div className="space-y-3">
 
         {stack.map((technology) => (
@@ -132,7 +132,7 @@ const TechCard = ({ usersPromise }: ItechCardProps) => {
             className="flex items-center justify-between rounded-lg border border-gray-200 p-3"
           >
 
-            {/* Technology information */}
+         
             <div className="flex items-center gap-3">
 
               <img
@@ -156,7 +156,7 @@ const TechCard = ({ usersPromise }: ItechCardProps) => {
             </div>
 
 
-            {/* X button */}
+           
             <button
               onClick={() => removeFromStack(technology.id)}
               className="text-lg text-red-50 bg-red-800 rounded-[100px] px-2 hover:text-amber-50-500"
@@ -171,7 +171,7 @@ const TechCard = ({ usersPromise }: ItechCardProps) => {
       </div>
 
 
-      {/* Remove All */}
+     
       <button
         onClick={removeAll}
         className="mt-4 w-full rounded-lg bg-red-500 py-2 text-sm font-medium text-white hover:bg-red-600"
