@@ -3,7 +3,7 @@ import HeroImage from "../assets/banner-stack.png";
 const hero = () => {
   return (
     <>
-      <section className=" mx-auto w-full  px-45 py-16">
+      <section className=" mx-auto w-full bg-emerald-50 px-40 py-16">
         <div className="flex justify-around items-center ">
           <div className="w-1/2">
             {/* for left side */}
@@ -40,7 +40,7 @@ const hero = () => {
         </div>
       </section>
 
-      <div className=" mx-auto px-45">
+      <div className=" mx-auto bg-emerald-50 px-40">
         <h1 className="text-4xl font-extrabold">
           Explore the
           <span className="bg-gradient-to-r from-[#df2b87] to-[#7446e8] bg-clip-text text-transparent">
