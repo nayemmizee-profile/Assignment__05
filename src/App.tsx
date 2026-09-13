@@ -1,8 +1,8 @@
 import Navbar from "./components/navbar";
 import Hero from "./components/herosection";
-// import { useEffect, useState } from "react";
+
 import TechCard from "./components/TechCard";
-// import TechDetails from "./components/TechDetails";
+
 import { Suspense } from "react";
 import Footer from "./components/footer";
 
